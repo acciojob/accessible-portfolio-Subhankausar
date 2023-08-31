@@ -1,15 +1,45 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <header role="heading">
+        <h1>My Portfolio</h1>
+    </header>
+
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <img src="https://media.licdn.com/dms/image/D4D03AQG2_y7J4R0qxg/profile-displayphoto-shrink_800_800/0/1674219587767?e=2147483647&v=beta&t=YNoB3Y-a_tz6MPeiJgK7M4-a7-sZElQtbtWzsRaTmpg" alt="My Profile Picture" role="img">
+        <p>This is a brief description of myself and my skills.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: <a href="#">Project Name</a></li>
+            <li role="listitem">Project 2: <a href="#">Project Name</a></li>
+            <li role="listitem">Project 3: <a href="#">Project Name</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, you can reach me at contact@example.com.</p>
+    </section>
 
 </body>
 
